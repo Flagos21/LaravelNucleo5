@@ -26,3 +26,8 @@ Route::post('/modulo/errores', [ModuloController::class, 'guardarContacto'])->na
 // Módulo 4 — Form Request Objects
 Route::get('/modulo/form-request', [FormRequestController::class, 'index'])->name('modulos.form-request');
 Route::post('/modulo/form-request', [FormRequestController::class, 'store'])->name('modulos.form-request.store');
+
+// ─────────────────────────────────────────────
+// Rutas NT6 — Autenticación y Autorización
+// ─────────────────────────────────────────────
+Route::get('/nt6', fn() => view('nt6.index'))->name('nt6.index');
